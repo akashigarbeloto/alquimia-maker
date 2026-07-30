@@ -20,6 +20,7 @@ function criarRodadas() {
             item.dataset.qtd = "";
 
             const img = document.createElement("img");
+            img.referrerPolicy = "no-referrer";
             img.src = "";
 
             const qtd = document.createElement("div");
