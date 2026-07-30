@@ -20,8 +20,7 @@ function criarRodadas() {
             item.dataset.qtd = "";
 
             const img = document.createElement("img");
-            img.crossOrigin = "anonymous";
-            img.src = "https://images.weserv.nl/?url=";
+            img.src = "";
 
             const qtd = document.createElement("div");
             qtd.className = "qtd";
@@ -58,7 +57,7 @@ function adicionarItem() {
     item.dataset.qtd = qtd || "1";
 
     const imgTag = item.querySelector("img");
-    imgTag.src = "https://images.weserv.nl/?url=" + img;
+    imgTag.src = img;
 
     const qtdTag = item.querySelector(".qtd");
     qtdTag.innerText = qtd || "";
@@ -109,7 +108,7 @@ function atualizarPreview() {
     const previewImg = document.getElementById("previewImg");
 
     if (val) {
-        previewImg.src = "https://images.weserv.nl/?url=" + val;
+        previewImg.src = val;
         previewImg.style.display = "block";
     } else {
         previewImg.src = "";
