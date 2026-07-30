@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Tabela de Itens</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="tabela-itens">
+
+<div class="painel-header">Registro de Itens por Rodada</div>
+
+<!-- FORMULÁRIO -->
+<div class="formulario">
+    <div class="campo">
+        <input type="text" id="nomeItem" placeholder=" ">
+        <label for="nomeItem">Nome do Item</label>
+    </div>
+
+    <div class="campo">
+        <input type="number" id="rodadaItem" placeholder=" " min="1" max="5">
+        <label for="rodadaItem">Rodada (1-5)</label>
+    </div>
+
+    <div class="campo">
+        <input type="number" id="posicaoItem" placeholder=" " min="1" max="8">
+        <label for="posicaoItem">Posição (1-8)</label>
+    </div>
+
+    <div class="campo">
+        <input type="text" id="idItem" placeholder=" ">
+        <label for="idItem">ID do Item</label>
+    </div>
+
+    <div class="campo">
+        <input type="text" id="imgItem" placeholder=" ">
+        <label for="imgItem">Link da IMG</label>
+    </div>
+
+    <div class="campo">
+        <input type="number" id="qtdItem" placeholder=" " min="1">
+        <label for="qtdItem">Quantidade</label>
+    </div>
+
+    <div class="linha-botao">
+        <button onclick="adicionarItem()">Adicionar Item</button>
+    </div>
+</div>
+
+<!-- As rodadas são geradas pelo script.js -->
+
+</div>
+
+<div class="botoes">
+    <button onclick="exportarTXT()">Exportar TXT</button>
+    <button onclick="exportarImagem()">Exportar Imagem</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
