@@ -212,3 +212,11 @@ button:hover {
 .formulario button {
     padding: 9px 22px;
 }
+
+.creditos {
+    text-align: center;
+    margin-top: 14px;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    color: var(--text-dim);
+}
