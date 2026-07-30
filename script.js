@@ -104,4 +104,19 @@ function exportarImagem() {
     });
 }
 
+function atualizarPreview() {
+    const val = document.getElementById("imgItem").value;
+    const previewImg = document.getElementById("previewImg");
+
+    if (val) {
+        previewImg.src = "https://images.weserv.nl/?url=" + val;
+        previewImg.style.display = "block";
+    } else {
+        previewImg.src = "";
+        previewImg.style.display = "none";
+    }
+}
+
+document.getElementById("imgItem").addEventListener("input", atualizarPreview);
+
 criarRodadas();
