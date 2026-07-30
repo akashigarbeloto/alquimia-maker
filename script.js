@@ -1,5 +1,5 @@
 function criarRodadas() {
-    const container = document.querySelector(".tabela-itens");
+    const container = document.querySelector("#areaExportar");
 
     for (let r = 1; r <= 5; r++) {
         const linha = document.createElement("div");
@@ -90,7 +90,7 @@ function exportarTXT() {
 }
 
 function exportarImagem() {
-    const tabela = document.querySelector(".tabela-itens");
+    const tabela = document.querySelector("#areaExportar");
 
     html2canvas(tabela, {
         useCORS: true,
