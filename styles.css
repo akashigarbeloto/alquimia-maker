@@ -111,6 +111,12 @@ body {
     margin-top: 4px;
 }
 
+.rodadas-container {
+    background: var(--panel);
+    padding: 4px 4px 10px 4px;
+    border-radius: 4px;
+}
+
 .linha {
     display: flex;
     align-items: center;
